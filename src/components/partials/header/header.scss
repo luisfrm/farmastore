@@ -23,4 +23,10 @@
   .buttonSignSection {
     margin-left: 15px;
   }
+
+  @media screen and (max-width: 981px) {
+    .buttonSignSection {
+      margin-left: 0;
+    } 
+  }
 }

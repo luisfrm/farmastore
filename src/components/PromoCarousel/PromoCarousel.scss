@@ -1,6 +1,10 @@
 #PromoCarousel {
   height: 340px;
 
+  @media screen and (max-width: 981px) {
+    height: 135px;
+  }
+
   .carousel-indicators {
     height: 10px;
 
