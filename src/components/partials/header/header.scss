@@ -1,0 +1,26 @@
+#navbar {
+  #dropdownAboutUs:hover {
+    .dropdown-menu {
+      display: block!important;
+    }
+  }
+
+  .nav-item {
+    .dropdown-item:focus, .dropdown-item:hover {
+      background-color: #6cc3d5!important;
+    }
+
+    & > .nav-link {
+      color: rgba(255,255,255,.8)!important;
+
+      &:hover {
+        font-weight: 500!important;
+        color: #fff!important;
+      }
+    }
+  }
+
+  .buttonSignSection {
+    margin-left: 15px;
+  }
+}

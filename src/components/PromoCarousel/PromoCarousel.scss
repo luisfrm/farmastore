@@ -1,0 +1,35 @@
+#PromoCarousel {
+  height: 340px;
+
+  .carousel-indicators {
+    height: 10px;
+
+    li {
+      height: 17px;
+      width: 17px;
+      border-radius: 50%;
+      background-color: rgba(0,0,0,.4);
+      border: 1px solid hsla(0,0%,100%,.64);
+      margin-left: 8px;
+      margin-right: 8px;
+      transition: transform .2s ease-in-out;
+  
+      &.active {
+        transform: scale(1.2);
+        background-color: hsla(0,0%,100%,.4);
+        border: 1px solid rgba(34,35,35,.4);
+      }
+    }
+  }
+
+  .carousel-control-prev .carousel-control-prev-icon {
+    background-image: url(../../resources/arrow.svg);
+    transform: scaleX(-1);
+    filter: invert(1);
+  }
+ 
+  .carousel-control-next .carousel-control-next-icon {
+    background-image: url(../../resources/arrow.svg);
+    filter: invert(1);
+  }
+}
