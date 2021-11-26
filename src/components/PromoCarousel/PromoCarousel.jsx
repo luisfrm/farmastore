@@ -7,8 +7,8 @@ export default function PromoCarousel() {
     <div id="PromoCarousel" className="carousel slide" data-ride="carousel">
       <ol className="carousel-indicators">
         {
-          PromoData.map((slide, index)=>{
-            return <li data-target="#PromoCarousel" data-slide-to={index} className={index===0 && 'active'}></li>
+          PromoData.map(({}, index)=>{
+            return <li data-target="#PromoCarousel" data-slide-to={index} key={index} className={index===0  ? 'active' : ''}></li>
           })
         }
       </ol>
@@ -17,7 +17,7 @@ export default function PromoCarousel() {
           PromoData.map((slide, index) => {
 
             return (
-              <div className={`carousel-item ${index===0 && 'active'}`}>
+              <div className={`carousel-item ${index===0 ? 'active' : ''}`} key={index}>
                 <img className="d-block w-100" src={slide} alt={`Slide ${index}`}/>
               </div>
             )

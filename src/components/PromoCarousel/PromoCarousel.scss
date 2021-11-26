@@ -1,5 +1,11 @@
 #PromoCarousel {
-  height: 340px;
+  .carousel-item {
+    height: 460px;
+  }
+
+  @media screen and (max-width: 1650px) {
+    height: 350px;
+  }
 
   @media screen and (max-width: 981px) {
     height: 135px;
