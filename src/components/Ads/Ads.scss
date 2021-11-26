@@ -2,7 +2,7 @@
   height: 540px;
 
   .AdItem {
-    height: 460px;
+    height: 450px;
     width: 440px;
   }
 
@@ -10,8 +10,12 @@
     height: 70%;
   }
 
-  .ad-1 img.card-img-top {
+  .ad-0 img.card-img-top {
     height: 50%;
+  }
+
+  .ad-1 .AdItem{
+    background-color: transparent;
   }
 }
 
