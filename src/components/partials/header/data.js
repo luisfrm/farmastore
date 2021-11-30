@@ -2,17 +2,20 @@ const data = [
   {
     name: 'inventory',
     text: "Inventario",
-    url: "/inventory"
+    url: "/inventory",
+    icon: <i class="fas fa-pills"></i>
   },
   {
     name: 'stores',
     text: "Farmacias",
-    url: "/stores"
+    url: "/stores",
+    icon: <i class="fas fa-store-alt"></i>
   },
   {
     name: 'cart',
     text: "Carrito",
-    url: "/cart"
+    url: "/cart",
+    icon: <i class="fas fa-shopping-cart"></i>
   },
   {
     name: 'dropdownAboutus',

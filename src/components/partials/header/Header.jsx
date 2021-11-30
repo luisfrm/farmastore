@@ -1,12 +1,13 @@
 import HeaderItem from "../Header_item/HeaderItem";
 import data from "./data"
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import "./header.scss";
 
 function App (){
   const isUserLogged = sessionStorage.getItem("isUserLogged")
   
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-info p-4" id="navbar">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-blue p-4" id="navbar">
       <a className="navbar-brand" href="/">Farma Store</a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -16,7 +17,7 @@ function App (){
         <ul className="navbar-nav mr-auto">
           {
             data.map(item => {
-              return <HeaderItem key={item.name} name={item.name} url={item.url} text={item.text} subItems={item.subItems}/>
+              return <HeaderItem key={item.name} name={item.name} url={item.url} text={item.text} subItems={item.subItems} icon={item.icon}/>
             })
           }
         </ul>

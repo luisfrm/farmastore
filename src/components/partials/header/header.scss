@@ -1,3 +1,5 @@
+@import '../../../helpers/variables.scss';
+
 #navbar {
   #dropdownAboutUs:hover {
     .dropdown-menu {
@@ -28,5 +30,17 @@
     .buttonSignSection {
       margin-left: 0;
     } 
+  }
+
+  .dropdown-menu {
+    background-color: $blue;
+  }
+
+  .dropdown-item {
+    color: $white;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #c9ccce;
+    }
   }
 }

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-export default function HeaderItem ({name, url, text, subItems}) {
+export default function HeaderItem ({name, url, text, subItems, icon}) {
   if (subItems.length === 0) {
     return (
       <li className={`nav-item ${name}`}>
-        <a className="nav-link" href={url}>{text}</a>
+        <a className="nav-link" href={url}>{icon} {text}</a>
       </li>
     )
   }else {
@@ -14,7 +14,7 @@ export default function HeaderItem ({name, url, text, subItems}) {
         <div className="dropdown-toggle nav-link" type="button" id={name} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {text}
         </div>
-        <div className="dropdown-menu" aria-labelledby={name}>
+        <div className="dropdown-menu bg-blue" aria-labelledby={name}>
           {
             subItems.map((item)=>{
               return <a className={`dropdown-item ${item.name}`} href={item.url} key={item.name}>{item.text}</a>

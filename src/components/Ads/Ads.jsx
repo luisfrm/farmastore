@@ -20,7 +20,6 @@ export default function Ads() {
         <div className="carousel-inner">
           {
             data.map(({url, title, content, buttonText}, index) => {
-      
               return (
                 <div className={`carousel-item ad-${index} ${index===0 ? 'active' : ''}`} key={index}>
                   <AdItem key={index} url={url} title={title} content={content} buttonText={buttonText} />
@@ -43,8 +42,8 @@ export default function Ads() {
         {
           data.map(({url, title, content, buttonText}, index) => {
             return (
-              <div className={`col-12 col-md-4 d-flex justify-content-center ad-${index}`}>
-                <AdItem key={index} url={url} title={title} content={content} buttonText={buttonText} />
+              <div className={`col-12 col-md-4 d-flex justify-content-center ad-${index}`} key={index}>
+                <AdItem url={url} title={title} content={content} buttonText={buttonText} />
               </div>)
           })
         }

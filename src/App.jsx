@@ -10,6 +10,7 @@ import Inventory from "./pages/inventory/Inventory";
 import Header from "./components/partials/header/Header";
 import Stores from "./pages/stores/Stores"
 import Cart from "./pages/cart/Cart"
+import Footer from './components/partials/Footer/Footer'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             </Route>
           </Switch>
         </section>
+        <Footer />
       </Router>
     </>
   );
