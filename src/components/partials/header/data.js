@@ -3,19 +3,19 @@ const data = [
     name: 'inventory',
     text: "Inventario",
     url: "/inventory",
-    icon: <i class="fas fa-pills"></i>
+    icon: <i className="fas fa-pills"></i>
   },
   {
     name: 'stores',
     text: "Farmacias",
     url: "/stores",
-    icon: <i class="fas fa-store-alt"></i>
+    icon: <i className="fas fa-store-alt"></i>
   },
   {
     name: 'cart',
     text: "Carrito",
     url: "/cart",
-    icon: <i class="fas fa-shopping-cart"></i>
+    icon: <i className="fas fa-shopping-cart"></i>
   },
   {
     name: 'dropdownAboutus',

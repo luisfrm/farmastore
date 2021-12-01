@@ -1,6 +1,6 @@
 import './AdItem.scss'
 
-export default function AdsItem({url, title, content, buttonText}) {
+export default function AdItem({url, title, content, buttonText}) {
   return (
     <div className="card AdItem">
       { url && <img src={url} alt="Ad image" className="card-img-top"/> }

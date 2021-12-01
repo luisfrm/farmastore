@@ -1,0 +1,18 @@
+#sidebar {
+  box-shadow: 0 2px 4px 2px rgb(143 142 142 / 25%), 0 2px 4px 2px rgb(143 142 142 / 25%);
+  height: max-content;
+
+  .checkmark {
+    border-radius: 1px;
+    border: .5px solid #a0a0a0;
+    height: 22px;
+    width: 22px;
+
+    & + .checkmark-target {
+      background-color: red;
+    }
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    -o-appearance:none;
+  }
+}

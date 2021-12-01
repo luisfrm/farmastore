@@ -10,7 +10,7 @@ export default function HeaderItem ({name, url, text, subItems, icon}) {
     )
   }else {
     return (
-      <li className={`dropdown nav-item dropdown ${name}`}>
+      <li className={`dropdown nav-item ${name}`}>
         <div className="dropdown-toggle nav-link" type="button" id={name} data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {text}
         </div>

@@ -1,0 +1,28 @@
+@import '../../../helpers/variables.scss';
+
+#cartWidget {
+  border-radius: 50%;
+  position: fixed;
+  bottom: 10%;
+  right: 1%;
+  z-index: 1000;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $darkBlue;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  * {
+    color: $white;
+  }
+}

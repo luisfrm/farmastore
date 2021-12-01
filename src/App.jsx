@@ -11,12 +11,14 @@ import Header from "./components/partials/header/Header";
 import Stores from "./pages/stores/Stores"
 import Cart from "./pages/cart/Cart"
 import Footer from './components/partials/Footer/Footer'
+import CartWidget from "./components/widgets/CartWidget/CartWidget";
 
 function App() {
   return (
     <>
       <Router>
         <Header/>
+        <CartWidget/>
         <section>
           <hr/>
           <Switch>

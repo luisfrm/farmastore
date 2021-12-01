@@ -34,6 +34,12 @@
 
   .dropdown-menu {
     background-color: $blue;
+
+    @media screen and (max-width: 981px) {
+      & {
+        background-color: $white;
+      }
+    }
   }
 
   .dropdown-item {
@@ -41,6 +47,17 @@
 
     &:not(:last-child) {
       border-bottom: 1px solid #c9ccce;
+    }
+
+    @media screen and (max-width: 981px) {
+      & {
+        color: $dark;
+        opacity: 0.7;
+
+        &:not(:last-child) {
+          border-bottom-color: $darkBlue;
+        }
+      }
     }
   }
 }

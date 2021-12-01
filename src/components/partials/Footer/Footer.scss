@@ -1,19 +1,21 @@
-.footer-text {
-  letter-spacing: .5px;
-  line-height: 22px;
-  font-weight: 400;
-  font-size: 17px;
-  color: #fff;
-  margin-bottom: inherit;
-}
+#footer {
+  .footer-text {
+    letter-spacing: .5px;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: inherit;
+  }
 
-.underline:after {
-  content: "";
-  position: absolute;
-  top: 38px;
-  height: 5px;
-  width: 60px;
-  left: 10px;
-  border: 2px solid #f665a2;
-  background-color: #f665a2;
+  .underline:after {
+    content: "";
+    position: absolute;
+    top: 38px;
+    height: 5px;
+    width: 60px;
+    left: 10px;
+    border: 2px solid #f665a2;
+    background-color: #f665a2;
+  }
 }
