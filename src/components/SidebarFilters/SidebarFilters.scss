@@ -2,17 +2,13 @@
   box-shadow: 0 2px 4px 2px rgb(143 142 142 / 25%), 0 2px 4px 2px rgb(143 142 142 / 25%);
   height: max-content;
 
-  .checkmark {
-    border-radius: 1px;
-    border: .5px solid #a0a0a0;
-    height: 22px;
-    width: 22px;
+  .form-check-input,
+  .form-check-label,
+  .dropdown {
+    cursor: pointer;
 
-    & + .checkmark-target {
-      background-color: red;
+    .dropdown-item {
+      cursor: pointer;
     }
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    -o-appearance:none;
   }
 }

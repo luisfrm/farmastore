@@ -1,0 +1,25 @@
+.is-valid {
+  border-color: #28a745;
+}
+
+.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.textWrong,
+.userWrong {
+  color: red
+}
+
+.textValid {
+  color: limegreen;
+  font-weight: 700;
+}

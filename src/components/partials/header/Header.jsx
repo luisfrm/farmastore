@@ -2,9 +2,16 @@ import HeaderItem from "../Header_item/HeaderItem";
 import data from "./data"
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import "./header.scss";
+import { useState } from "react";
 
 function App (){
-  const isUserLogged = sessionStorage.getItem("isUserLogged")
+  const [userLogged, setuserLogged] = useState(sessionStorage.getItem("userLogged"))
+
+  const handleSignOut = () => {
+    sessionStorage.setItem('userLogged', false)
+    setuserLogged(sessionStorage.getItem('userLogged'));
+    window.location.reload()
+  }
   
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-blue p-4" id="navbar">
@@ -26,7 +33,8 @@ function App (){
             <input className="form-control mr-sm-2 w-auto d-inline" type="search" placeholder="Buscar en inventario" aria-label="Search"/>
             <button className="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
           </form>
-          { !isUserLogged ? <div className="input-group w-auto my-2 my-lg-0 d-block d-md-inline buttonSignSection"><button className="btn btn-outline-light my-2 my-sm-0" type="button">Log in</button><button className="btn btn-outline-light my-2 my-sm-0" type="button">Sign in</button></div> : <div className="input-group w-auto my-2 my-lg-0 d-inline buttonSignSection"><button className="btn btn-outline-light my-2 my-sm-0" type="button">Sign out</button></div> }
+          { userLogged === 'false' && <div className="input-group w-auto my-2 my-lg-0 d-block d-md-inline buttonSignSection"><button className="btn btn-outline-light my-2 my-sm-0" data-toggle="modal" data-target="#loginModal" type="button">Log in</button></div> }
+          { userLogged === 'true' && <div className="input-group w-auto my-2 my-lg-0 d-inline buttonSignSection"><button onClick={handleSignOut} className="btn btn-outline-light my-2 my-sm-0" type="button">Sign out</button></div> }
         </div>
       </div>
     </nav>

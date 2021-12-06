@@ -6,33 +6,22 @@ const data = [
     icon: <i className="fas fa-pills"></i>
   },
   {
-    name: 'stores',
-    text: "Farmacias",
-    url: "/stores",
-    icon: <i className="fas fa-store-alt"></i>
-  },
-  {
     name: 'cart',
     text: "Carrito",
     url: "/cart",
     icon: <i className="fas fa-shopping-cart"></i>
   },
   {
-    name: 'dropdownAboutus',
+    name: "aboutUs",
     text: "Acerca de",
-    url: "",
-    subItems: [
-      {
-        name: "aboutUs",
-        text: "Acerca de",
-        url: "/about-us"
-      },
-      {
-        name: "contactUs",
-        text: "Contactanos",
-        url: "/contact-us"
-      }
-    ]
+    url: "/about-us",
+    icon: <i className="fas fa-store-alt"></i>
+  },
+  {
+    name: "contactUs",
+    text: "Contactanos",
+    url: "/contact-us",
+    icon: <i className="fas fa-envelope"></i>
   }
 ]
 

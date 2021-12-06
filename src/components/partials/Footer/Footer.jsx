@@ -37,7 +37,7 @@ function Footer (){
               <div className="row py-1 pl-3">
                 <div className="col-1 px-0"><i className="fas fa-phone"></i></div>
                 <div className="col-10 pl-0">
-                  <span className="footer-text">{contactInfo.phone}</span>
+                  <a href={`tel:${contactInfo.phone}`} className="footer-text">{contactInfo.phone}</a>
                   </div>
               </div>
               <div className="row py-1 pl-3">

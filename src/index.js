@@ -6,8 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'jquery/dist/jquery'
 import 'popper.js/dist/popper'
 import 'bootstrap/dist/js/bootstrap'
-import './helpers/backgrounds.scss'
 import './helpers/variables.scss'
+import './helpers/backgrounds.scss'
+import './helpers/form-fields.scss'
 
 
 

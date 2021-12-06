@@ -1,0 +1,8 @@
+@import '../../../../helpers/variables.scss';
+@import '../../../../helpers/backgrounds.scss';
+
+#updateProductModal label {
+  color: $dark;
+  font-weight: 700;
+  font-size: 15px;
+}
